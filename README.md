@@ -4,7 +4,8 @@ Configuration scaffold for projects requiring similar settings / vendor connecti
 
 Converts YML keys to python attributes to make code more readable. e.g:
 
-```config.redis.host
+```
+config.redis.host
 
 # rather than
 
