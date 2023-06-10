@@ -9,4 +9,5 @@ config.redis.host
 
 # rather than
 
-config['redis']['host']```
+config['redis']['host']
+```
