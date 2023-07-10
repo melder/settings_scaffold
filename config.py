@@ -38,7 +38,7 @@ if conf.get("redis"):
 
     redis_host = conf.redis.host
     redis_port = conf.redis.port
-    redis = r.Redis(host=redis_host, port=redis_port)
+    redis = r.Redis(host=redis_host, port=redis_port, decode_responses=True)
 
     if conf.redis.get("om"):
         os.environ["REDIS_OM_URL"] = f"redis://@{redis_host}:{redis_port}"
